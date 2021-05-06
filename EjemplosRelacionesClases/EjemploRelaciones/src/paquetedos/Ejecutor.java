@@ -17,13 +17,22 @@ public class Ejecutor {
 
         // Se crea un objeto de tipo Publicación
         int anioPublicacion = 2000;
-        
+
         Publicacion p = new Publicacion(aut, anioPublicacion);
+
+        System.out.printf("Publicación\nAutor: %s %s\n"
+                + "Año de Publicación: %d\n",
+                p.obtenerAutor().obtenerNombre(),
+                p.obtenerAutor().obtenerApellido(),
+                p.obtenerAnioPublicacion());
+        
+        aut.establecerApellido("Elizalde");
         
         System.out.printf("Publicación\nAutor: %s %s\n"
                 + "Año de Publicación: %d\n",
                 p.obtenerAutor().obtenerNombre(),
                 p.obtenerAutor().obtenerApellido(),
                 p.obtenerAnioPublicacion());
+
     }
 }

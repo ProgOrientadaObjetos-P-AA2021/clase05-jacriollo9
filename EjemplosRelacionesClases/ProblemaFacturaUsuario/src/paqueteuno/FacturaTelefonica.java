@@ -5,6 +5,8 @@
  */
 package paqueteuno;
 
+import paquete2.Usuario;
+
 /**
  *
  * @author reroes
@@ -23,7 +25,7 @@ public class FacturaTelefonica {
         valorMinuto = valorMin;
         usuario = u;
     }
-    
+
     public void establecerNumeroTelefono(String c){
         numeroTelefono = c;
     }

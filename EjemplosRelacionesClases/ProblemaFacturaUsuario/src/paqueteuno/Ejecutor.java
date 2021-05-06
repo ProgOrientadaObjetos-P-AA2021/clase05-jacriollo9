@@ -5,16 +5,24 @@
  */
 package paqueteuno;
 
+import paquete2.Usuario;
 /**
  *
  * @author reroes
  */
+
 public class Ejecutor {
     public static void main(String[] args) {
         // Crear el objeto Usuario
         Usuario usuario = new Usuario();
+        usuario.establecerNombre("Jose");
+        usuario.establecerApellido("Criollo");
+        usuario.establecerIdentificacion("1102560354");
+        
+        
         // Crear el objeto FacturaTelefonica
-        FacturaTelefonica factura = new FacturaTelefonica();
+        FacturaTelefonica factura = new FacturaTelefonica("0939102163", 100,
+                0.50, usuario);
         
         factura.calcularValorFactura();
         
